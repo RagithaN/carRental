@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<record model="ir.ui.view" id="carrental_customers_view_form">
+    <field name="name">carrental_customers_view_form</field>
+   <field name="model">carrental.customers</field>
+    <field name="arch" type="xml">
+      <form string="customers">
+      	<sheet>
+      		<group col="4">
+               <group colspan="2">	
+      	  <div class="oe_button_box" name="open_bookings_ofthe_customer">
+      	<button name="open_bookings_ofthe_customer" type="object" class="oe_stat_button" icon="fa-calender">
+      	</button>
+      	</div> 
+      	  	<field name="cuid" placeholder="customer-id"/>
+      	  	<field name="customer_name" placeholder="customer-name"/>
+      	  	<field name="address" placeholder="address"/>
+      	  	<field name="phone" placeholder="phone"/>
+      	  	<field name="email" placeholder="email"/>
+      	  </group>
+               </group >
+      	 
+      	  </sheet>
+      	  <div class="oe_button_box" name="open_bookings_ofthe_customer">
+      	<button name="open_bookings_ofthe_customer" type="object" class="oe_stat_button" icon="fa-calender">
+      	</button>
+      	</div>      
+      	  </form>
+      	  </field>
+      	  </record>
+</odoo>

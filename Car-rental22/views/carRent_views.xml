@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record model="ir.actions.act_window" id="action_carrental_cars">
+  	<field name="name">Car</field>
+  	<field name="res_model">carrental.cars</field>
+  	<field name="view_mode">tree,form</field>
+  	<field name="type">ir.actions.act_window</field>
+  </record>
+  <record model="ir.actions.act_window" id="action_carrental_customers">
+  	<field name="name">Customer</field>
+  	<field name="res_model">carrental.customers</field>
+  	<field name="view_mode">tree,form</field>
+  	<field name="type">ir.actions.act_window</field>
+  </record>
+  <record model="ir.actions.act_window" id="action_carrental_bookings">
+  	<field name="name">bookings</field>
+  	<field name="res_model">carrental.bookings</field>
+  	<field name="view_mode">tree,form</field>
+  	<field name="type">ir.actions.act_window</field>
+  </record>
+    <menuitem name="car Rental" id="carrental_root_menu"/>
+  <menuitem name="cars" id="carrental_cars_menu" parent="carrental_root_menu" action="action_carrental_cars" sequence="1"/>
+  <menuitem name="customers" id="carrental_customers_menu" parent="carrental_root_menu" action="action_carrental_customers" sequence="2"/>
+  <menuitem name="bookings" id="carrental_bookings_menu" parent="carrental_root_menu" action="action_carrental_bookings" sequence="3"/>
+       	  
+  
+  </odoo>
+  	
+

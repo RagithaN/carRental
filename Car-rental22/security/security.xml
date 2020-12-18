@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.rule" id="ir_rule_carrental_cars_public">
+        <field name="name">carrental cars: public: published only</field>
+        <field name="model_id" ref="model_carrental_cars"/>
+        <field name="groups" eval="[(4, ref('base.group_public')), (4, ref('base.group_portal'))]"/>
+    </record>
+     <record model="ir.rule" id="ir_rule_carrental_customers_public">
+        <field name="name">carrental cars: public: published only</field>
+        <field name="model_id" ref="model_carrental_customers"/>
+        <field name="groups" eval="[(4, ref('base.group_public')), (4, ref('base.group_portal'))]"/>
+    </record>
+
+    <record model="ir.rule" id="ir_rule_carrental_bookings_public">
+        <field name="name">carrental cars: public: published only</field>
+        <field name="model_id" ref="model_carrental_bookings"/>
+        <field name="groups" eval="[(4, ref('base.group_public')), (4, ref('base.group_portal'))]"/>
+    </record>
+</odoo>

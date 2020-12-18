@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<record model="ir.ui.view" id="carrental_bookings_form">
+        <field name="name"> bookings form view</field>
+        <field name="model">carrental.bookings</field>
+        <field name="arch" type="xml">
+          <form string="cars booking">
+            <header>
+            <firld name="state" widget="statusbar" option="{'clickable':'1'}"/>
+            </header>
+            <sheet>
+              <group col="4">
+               <group colspan="2">
+                
+               <field name="booking_id" placeholder="booking_id"/>
+               <field name="car_number" placeholder="car_number"/>
+               <field name="customer_id" placeholder="customer_id"/>
+               <field name="booking_from" placeholder="booking_from"/>
+               
+               <field name="booked_till" placeholder="booking_till"/>
+               <field name="price" placeholder="price"/>
+               </group>
+               </group >
+                            </sheet>
+               </form>
+               </field>
+               </record>
+ </odoo>
